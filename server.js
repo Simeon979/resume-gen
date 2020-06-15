@@ -74,6 +74,12 @@ app.post("/generate", async (req, res) => {
       path.join("./components", "utilities.min.css"),
       path.join("./components", "tailwind.min.css"),
     ],
+    pdf: {
+      format: "A4",
+    },
+    launchOptions: {
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    },
   });
 
   try {
