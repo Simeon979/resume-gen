@@ -7,7 +7,7 @@
     "start": "webpack && node build/server.js"
   },
   "engines": {
-    "node": "6.2.2"
+    "node": "12.x"
   },
   "author": "okanlawon emmanuel",
   "license": "ISC",
