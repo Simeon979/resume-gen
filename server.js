@@ -82,7 +82,8 @@ app.post("/generate", async (req, res) => {
     await html5ToPDF.close();
     console.log("DONE");
   } catch (err) {
-    return res.status(500).json({ message: "an error occured" });
+    console.log(err);
+    return res.status(500).json({ error: err, message: "an error occured" });
   }
   /*
   pdf
