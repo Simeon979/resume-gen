@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && node build/server.js"
+    "start": "npm install --only=dev && webpack && node build/server.js"
   },
   "engines": {
     "node": "6.2.2"
